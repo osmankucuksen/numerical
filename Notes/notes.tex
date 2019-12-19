@@ -1,0 +1,99 @@
+\documentclass[12pt]{article}
+\usepackage{a4}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor} % (Added by Osman: use names for certain colors etc.)
+
+\usepackage [OT1]{fontenc}
+\usepackage{bm}
+\usepackage {float}
+\usepackage {amsmath, amssymb, amsfonts}
+\usepackage {rotating}  % ben�tigt f�r Umgebung sidewaystable
+\usepackage[latin1]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{epstopdf}
+\usepackage {multirow}  % ben�tigt f�r multi-row command
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[FIGTOPCAP]{subfigure}
+\usepackage{graphicx}           % needed for pdf figures
+\usepackage{comment, color, framed} %mynotes environment, printed only when outcomment \excludecomment{mynote} below
+\usepackage{tikz} % Added by Osman (needed for some drawings of timeline)
+
+\usepackage{tabularx,ctable}     % ctable for tables with footnotes, uses booktabs
+%\usepackage{german}
+
+\usepackage[onehalfspacing]{setspace} % formatting for AER
+\usepackage[left=1.5in,right=1.5in,top=1.5in,bottom=1.5in]{geometry} % formatting f
+
+%The packages that I add (Osman)
+\usepackage{bbm}
+\usepackage{hyperref}
+\usepackage{natbib}
+\usetikzlibrary{decorations.pathreplacing}
+\usepackage[ruled,longend,lined]{algorithm2e}
+%\usepackage[shortlabels]{enumerate}
+\usepackage[shortlabels]{enumitem}
+%\usepackage{tabto}   % Alex cannot compile with that package
+\usepackage[FIGTOPCAP]{subfigure}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}{Acknowledgement}
+%\newtheorem{algorithm}{Algorithm}
+\newtheorem{assumption}{Assumption}
+\newtheorem{axiom}{Axiom}
+\newtheorem{case}{Case}
+\newtheorem{claim}{Claim}
+\newtheorem{conclusion}{Conclusion}
+\newtheorem{condition}{Condition}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{corollary}{Corollary}
+\newtheorem{criterion}{Criterion}
+\newtheorem{definition}{Definition}
+\newtheorem{example}{Example}
+\newtheorem{exercise}{Exercise}
+\newtheorem{lemma}{Lemma}
+\newtheorem{notation}{Notation}
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{remark}{Remark}
+\newtheorem{solution}{Solution}
+\newtheorem{summary}{Summary}
+
+\definecolor{shadecolor}{gray}{0.875}
+\specialcomment{mynote}{\begin{shaded}}{\end{shaded}}
+%\excludecomment{mynote} % outcomment this line to display mynote environments. Important: \begin{mynote} and \end{mynote} must be written in first column (not indented!)
+
+\specialcomment{todo}{\begin{shaded} \textbf{\color{red} To Do: }}{\end{shaded}}
+\specialcomment{questionosi}{\begin{shaded} \textbf{\color{red} Question by Osman: }}{\end{shaded}}
+%\excludecomment{questiondan}
+\hypersetup{
+    colorlinks,
+    linkcolor={purple!45!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
+
+
+\begin{document}
+	
+	\title{Automation, Education Subsidies and, the Optimal Income Taxes}
+	\author{Osman K\"u\c{c}\"uk\c{s}en\footnote{Goethe University Frankfurt}}
+	\date{}
+	\maketitle
+	
+\input{abstract}	
+
+	\clearpage
+	\newpage
+	\input{setup_env}
+	
+	\clearpage
+	\newpage
+	
+	
+	
+	%\appendix{}
+	
+	
+	
+\end{document}
